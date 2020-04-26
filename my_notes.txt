@@ -1,0 +1,18 @@
+Azure Cosmos DB provides a couple of differet API. Cassanda is one of them so is 100% compatible our DB.
+
+---------------------------------------------------
+
+1. Containerize cloud-ready app with Docker containers
+
+2. Run Docker container on Azure Kubernetes Services (AKS)
+
+---------------------------------------------------
+
+Move to microservices(?)
+
+
+
+
+MongoDB:
+Circular dependency in Node.js 14 nightly
+https://jira.mongodb.org/browse/NODE-2536

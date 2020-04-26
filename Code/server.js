@@ -9,7 +9,15 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 // configuration ===============================================================
-mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. 
+mongoose.connect(database.localUrl, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+}).then(() => console.log('DB Connected!'))
+.catch(err => {
+console.log(Error, err.message);
+});; 	
+
+  // Connect to local MongoDB instance. 
 //mongoose.connect(database.remoteUrl); 	// Connect to Azure remote CosmosDB instance. 
 
 app.use(express.static('./public')); 		// set the static files location /public/img will be /img for users
